@@ -6,10 +6,11 @@
 /*   By: mdegache <mdegache@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 08:03:48 by mdegache          #+#    #+#             */
-/*   Updated: 2024/10/23 15:14:54 by mdegache         ###   ########.fr       */
+/*   Updated: 2024/11/20 10:11:34 by mdegache         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {

@@ -3,17 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mdegache <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mdegache <mdegache@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:56:19 by mdegache          #+#    #+#             */
-/*   Updated: 2024/10/14 08:18:17 by mdegache         ###   ########.fr       */
+/*   Updated: 2024/12/17 14:53:33 by mdegache         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-int	ft_isalnum(int i)
+
+int	ft_isalnum(int c)
 {
-	if (i >= 48 & i <= 57)
+	if (c >= 48 && c <= 57)
 		return (8);
-	if ((i >= 65 & i <= 90) || (i >= 97 & i <= 122))
+	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
 		return (8);
 	return (0);
 }

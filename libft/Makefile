@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: mdegache <marvin@42.fr>                    +#+  +:+       +#+         #
+#    By: mdegache <mdegache@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/09 14:01:00 by mdegache          #+#    #+#              #
-#    Updated: 2024/10/17 13:07:16 by mdegache         ###   ########.fr        #
+#    Updated: 2024/12/19 09:10:56 by mdegache         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -68,17 +68,17 @@ OBJ_BONUS = $(BONUS:.c=.o) $(SRC:.c=.o)
 all: $(NAME)
 
 $(NAME): $(OBJ)
-		$(CC) $(SRC) $(CFLAGS)
-		$(AR) $(NAME) -o $^
+		@$(CC) $(SRC) $(CFLAGS)
+		@$(AR) $(NAME) -o $^
 
 bonus : $(OBJ_BONUS)
-	       	$(CC) $(SRC) $(BONUS) $(CFLAGS)
-		$(AR) $(NAME) -o $^
+	       	@$(CC) $(SRC) $(BONUS) $(CFLAGS)
+		@$(AR) $(NAME) -o $^
 
 clean:
-		rm -f $(OBJ_BONUS)
+		@rm -f $(OBJ_BONUS)
     
 fclean: clean
-		rm -f $(NAME)
+		@rm -f $(NAME)
     
 re: fclean all
